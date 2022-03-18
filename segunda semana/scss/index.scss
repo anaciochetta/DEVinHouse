@@ -1,0 +1,68 @@
+$padding: 6px;
+$backGroundColor: #fde8d8;
+$detailsColor: #ff84ec;
+$colorOne: #4ad3f0;
+$colorTwo: #445cef;
+$colorB: #fe5d61;
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: $padding;
+  list-style: none;
+  display: inline-block;
+  background-color: $colorTwo;
+}
+.navbar {
+  .navigation-bar {
+    background-color: $colorOne;
+    width: 100%;
+    left: 0%;
+    position: fixed;
+    text-align: center;
+    display: inline-block;
+  }
+  a {
+    vertical-align: top;
+    margin-right: 10px;
+    line-height: 0px;
+  }
+  &:hover {
+    background: $colorB;
+    color: rgb(208, 186, 238);
+  }
+  input {
+    color: #ff84ec;
+  }
+}
+.gallery {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  border: 1px solid #ccc;
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+}
+.principal {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+.footer {
+  border-top: 1px;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  background-color: $colorB;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  p {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1S03</title>
+    <style>
+      body {
+        background-color: rgb(94, 255, 255);
+        color: black;
+        font-size: large;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Semana 3 - JavaScript</h2>
+    <input type="button" value="Botão mágico" onclick="showQuestion()" />
+    <p id="gatinho"></p>
+    <img
+      src="have-a-nice-day.png"
+      alt="unicornio"
+      id="gatinhoFeliz"
+      hidden="true"
+    />
+    <img src="angry.png" alt="gatinhoTriste" id="gatinhoTriste" hidden="true" />
+    <script>
+      alert("Olá Mundo!");
+      let resposta;
+
+      const showQuestion = function () {
+        resposta = prompt("Você deseja continuar?" + "   (sim ou não)");
+        if (resposta === "sim") {
+          document.getElementById("gatinhoFeliz").hidden = false;
+        } else {
+          document.getElementById("gatinhoTriste").hidden = false;
+        }
+      };
+    </script>
+  </body>
+</html>

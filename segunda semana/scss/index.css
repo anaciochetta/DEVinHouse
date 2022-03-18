@@ -1,0 +1,68 @@
+div {
+  box-sizing: border-box;
+  padding: 6px;
+  list-style: none;
+  display: inline-block;
+  background-color: #fde8d8;
+  text-align: center;
+  height: 100%;
+}
+
+a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+.navbar .navigation-bar {
+  background-color: #4ad3f0;
+  /* change to desired color */
+  border: 0px;
+  top: 0px;
+  width: 100%;
+  left: 0%;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+.navbar .logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.navbar .navigation-bar > a {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  height: 68px;
+  /* if you want it to take the full height of the bar */
+  line-height: 70px;
+  /* if you want it vertically middle of the navbar */
+}
+.navbar .navigation-bar a:hover {
+  background: #fe5d61;
+  color: #d0baee;
+}
+
+.footer {
+  border-top: 1px;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  background-color: #fe5d61;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+}
+.footer p {
+  margin: 0px;
+}
+
+/*# sourceMappingURL=index.css.map */

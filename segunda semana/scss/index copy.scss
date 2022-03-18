@@ -1,0 +1,69 @@
+$padding: 6px;
+$backGroundColor: #fde8d8;
+$detailsColor: #ff84ec;
+$colorOne: #4ad3f0;
+$colorTwo: #445cef;
+$colorB: #fe5d61;
+div {
+  box-sizing: border-box;
+  padding: $padding;
+  list-style: none;
+  display: inline-block;
+  background-color: $backGroundColor;
+  text-align: center;
+  height: 100%;
+}
+
+a {
+  display: block;
+  padding: $padding 12px;
+  text-decoration: none;
+}
+.navbar {
+  .navigation-bar {
+    background-color: $colorOne; /* change to desired color */
+    border: 0px;
+    top: 0px;
+    width: 100%;
+    left: 0%;
+    overflow: hidden;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .navigation-bar > a {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+    height: 68px; /* if you want it to take the full height of the bar */
+    line-height: 70px; /* if you want it vertically middle of the navbar */
+  }
+  &:hover {
+    background: $colorB;
+    color: rgb(208, 186, 238);
+  }
+}
+.footer {
+  border-top: 1px;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  background-color: $colorB;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  p {
+    margin: 0px;
+  }
+}
