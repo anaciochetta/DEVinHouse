@@ -4,14 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Exercicios 3 a 6</title>
   </head>
   <body>
+    <h2>Exercício 3</h2>
     <p id="resposta"></p>
-    <script>
-      let nome;
-      nome = prompt("Qual o seu nome?");
-      document.getElementById("resposta").innerHTML = nome;
-    </script>
+    <script src="exercicios.js"></script>
+    <h2>Exercício 4</h2>
+    <p>Nome: <input type="string" id="nome" /></p>
+    <p>Sobrenome: <input type="string" id="sobrenome" /></p>
+    <p>Idade: <input type="number" id="idade" /></p>
+    <p>
+      Tipo de Plano: <input type="radio" name="tipoPlano" id="rsim" /> Sim
+      <input type="radio" name="tipoPlano" id="rnao" /> Não
+    </p>
+    <p><input type="button" value="Mostrar" onclick="mostrar()" /></p>
+    <p id="dados"></p>
+    <h2>Exercício 5 e 6</h2>
+    <p">alert</p>
   </body>
 </html>
