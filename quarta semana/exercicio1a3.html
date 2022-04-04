@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Exercício 1</title>
+  </head>
+  <body>
+    <h2>Exercício 1</h2>
+    <p id="classeIdade"></p>
+    <script>
+      let idade = prompt("Qual sua idade?");
+      let mensagem = "";
+
+      if (idade <= 15) {
+        mensagem = "Jovem";
+      } else if (idade >= 16 && idade <= 64) {
+        mensagem = "Adulto";
+      } else if (idade >= 65) {
+        mensagem = "Idoso";
+      }
+      document.getElementById("classeIdade").innerHTML = mensagem;
+    </script>
+    <h2>Exercício 2</h2>
+    <p id="calculadora"></p>
+
+    <script>
+      let operacao = prompt(
+        "Escolha o tipo de operação que deseja fazer: (+, -, /, *)"
+      );
+      let numeroUm = parseInt(prompt("Escolha o primeiro número da operação:"));
+      let numeroDois = parseInt(
+        prompt("Escolha o segundo número da operação:")
+      );
+      let resultado = 0;
+
+      switch (operacao) {
+        case "+":
+          resultado = numeroUm + numeroDois;
+          break;
+        case "-":
+          resultado = numeroUm - numeroDois;
+          break;
+        case "/":
+          resultado = numeroUm / numeroDois;
+          break;
+        case "*":
+          resultado = numeroUm * numeroDois;
+          break;
+      }
+
+      document.getElementById("calculadora").innerHTML = resultado;
+    </script>
+
+    <h2>Exercício 3</h2>
+    <p id="par_impar"></p>
+    <script>
+      let number = parseInt(
+        prompt("Escolha um número para saber se é par ou ímpar:")
+      );
+
+      let findNumber = number % 2 !== 0 ? (text = "ímpar") : (text = "par");
+      document.getElementById("par_impar").innerHTML = `O ${number} é ${text} `;
+    </script>
+  </body>
+</html>
