@@ -1,7 +1,7 @@
-import {saudacao} from './saudação.js'
+import { saudacao } from "./saudação.js";
 
-saudacao()
+saudacao();
 
-import { saudacaoEspecial } from './saudação-especial.js'
+import { saudacaoEspecial } from "./saudação-especial.js";
 
-saudacaoEspecial("Ana")
+saudacaoEspecial("Ana");
