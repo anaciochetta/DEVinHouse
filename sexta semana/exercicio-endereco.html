@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3-5</title>
+  </head>
+  <body>
+    <h1>Busca endereço</h1>
+    <label for="cepN">CEP: </label>
+    <input type="text" id="cepN" />
+    <input type="button" id="btnBuscar" value="Buscar" />
+    <p id="resposta"></p>
+
+    <script>
+      const btnCalcular = document.getElementById("btnBuscar");
+      btnCalcular.addEventListener("click", buscaEndereco);
+
+      function buscaEndereco() {
+        let cep = document.querySelector("#cepN").value;
+        let length = cep.length;
+        let url = `https://viacep.com.br/ws/${cep}/json/`;
+
+        if (length !== 8) {
+          alert(`Cep inválido!`);
+          if (length == 0) {
+            alert(`Digite um Cep para poder fazer a busca!`);
+          }
+        }
+
+        fetch(url).then((response) => {
+          response.json().then((data) => {
+            console.log(data);
+            mostrarResposta(data);
+          });
+        });
+      }
+
+      function mostrarResposta(dados) {
+        let resposta = document.getElementById("resposta");
+        if (dados.erro) {
+          resposta.innerHTML = `Não foi possível achar o endereço!`;
+        }
+        resposta.innerHTML = `<p>Endereço: ${dados.logradouro}<p>
+            <p>Bairro: ${dados.bairro}<p>
+                <p>Cidade: ${dados.localidade}<p>
+                    <p>Estado: ${dados.uf}<p>`;
+      }
+    </script>
+  </body>
+</html>

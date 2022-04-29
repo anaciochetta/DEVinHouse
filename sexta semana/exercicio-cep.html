@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 6-8</title>
+  </head>
+  <body>
+    <h1>Busca CEP</h1>
+    <label for="uf">Uf: </label>
+    <input type="text" id="uf" />
+    <br />
+    <label for="cidade">Cidade: </label>
+    <input type="text" id="cidade" />
+    <br />
+    <label for="rua">Rua: </label>
+    <input type="text" id="rua" />
+    <br />
+    <input type="button" id="btnBuscar" value="Buscar" />
+    <p id="resposta"></p>
+
+    <script>
+      const btnCalcular = document.getElementById("btnBuscar");
+      btnCalcular.addEventListener("click", buscaEndereco);
+
+      function buscaEndereco() {
+        let uf = document.getElementById("uf").value;
+        let ufLength = uf.length;
+        uf.toUpperCase();
+        let cidade = document.getElementById("cidade").value;
+        let cidadeLength = cidade.length;
+        let rua = document.getElementById("rua").value;
+        let ruaLength = rua.length;
+        let url = `https://viacep.com.br/ws/${uf}/${cidade}/${rua}/json/`;
+
+        if (cidadeLength == 0) {
+          alert(`Digite uma cidadde  para poder fazer a busca!`);
+        }
+        if ((ufLength == 0) | (ufLength >= 3)) {
+          alert(`Digite um uf válido para poder fazer a busca!`);
+        }
+        if (ruaLength == 0) {
+          alert(`Digite uma rua para poder fazer a busca!`);
+        } else {
+          fetch(url).then((response) => {
+            response.json().then((data) => {
+              console.log(data);
+              mostrarResposta(data[0]);
+            });
+          });
+        }
+      }
+
+      function mostrarResposta(dados) {
+        let resposta = document.getElementById("resposta");
+        if (dados.erro) {
+          resposta.innerHTML = `Não foi possível achar o cep!`;
+        }
+        resposta.innerHTML = `<p>Cep: ${dados.cep}<p>
+            <p>Endereço: ${dados.logradouro}<p>
+              <p>Complemento: ${dados.complemento}<p>
+            <p>Bairro: ${dados.bairro}<p>
+                <p>Cidade: ${dados.localidade}<p>
+                    <p>Estado: ${dados.uf}<p>
+                      <p>DDD: ${dados.ddd}<p>`;
+      }
+    </script>
+  </body>
+</html>
