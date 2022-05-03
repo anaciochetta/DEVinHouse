@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -8,17 +8,27 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { Route, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BebidasComponent } from './pages/bebidas/bebidas.component';
+import { ComidasComponent } from './pages/comidas/comidas.component';
 
 const ROUTES: Route[] = [
   {
-    path: "", 
-    component: HomeComponent
+    path: '',
+    component: HomeComponent,
   },
   {
-    path: "   sobre",
-    component: AboutComponent
-  }
-]
+    path: 'sobre',
+    component: AboutComponent,
+  },
+  {
+    path: 'comidas',
+    component: ComidasComponent,
+  },
+  {
+    path: 'bebidas',
+    component: BebidasComponent,
+  },
+];
 
 @NgModule({
   declarations: [
@@ -27,14 +37,12 @@ const ROUTES: Route[] = [
     FooterComponent,
     ContentComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BebidasComponent,
+    ComidasComponent,
   ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot(ROUTES)
-  ],
+  imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

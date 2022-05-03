@@ -1,33 +1,27 @@
 {
-    "notificacoes": [
+    "opcoes": [
       {
-        "aplicativo": "IFOOD",
-        "titulo": "Olha a chuva!",
-        "descricao": "A chuva chegou! E seu almoço pode chegar em alguns cliques",
-        "tempoPublicacao": "Agora",
-        "imagem": "assets/ifood.png"
+        "nome": "Comidas",
+        "imagem": "assets/comida.jpg"
       },
       {
-        "aplicativo": "MAGALU",
-        "titulo": "Tá ROLANDO, VEM!",
-        "descricao": "A black das blacks é só no Magalu! Toca aqui pra ver as MELHORES OFERTAS",
-        "tempoPublicacao": "5m",
-        "imagem": "assets/magalu.png"
-      },
-      {
-        "aplicativo": "AMAZON",
-        "titulo": "20% OFF",
-        "descricao": "Aproveite 20% off na sua primeira compra. Desconto valido por 24horas",
-        "tempoPublicacao": "1h",
-        "imagem": "assets/amazon.png"
-      },
-      {
-        "aplicativo": "LINKEDIN",
-        "titulo": "Notificações não visualizadas",
-        "descricao": "Veja atualizações do Linkedin que você pode ter perdido",
-        "tempoPublicacao": "Agora",
-        "imagem": "assets/linkedin.png"
+        "nome": "Bebidas",
+        "imagem": "assets/bebidas.jpg"
       }
-    ]
+    ],
+    "comidas": [
+      {
+          "nome": "Batata Frita",
+          "imagem": "assets/comida.jpg",
+          "descricao": "Batata frita no óleo vegetal, 250g",
+          "preco": "R$20,00"
+      }    ],
+      "bebidas": [
+        {
+            "nome": "Gin tônica",
+            "imagem": "assets/bebidas.jpg",
+            "descricao": "Gin Tanqueray com água tônica Antartica",
+            "preco": "R$20,00"
+        }    ]
   }
   
