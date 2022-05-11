@@ -10,10 +10,12 @@ import { Route, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BebidasComponent } from './pages/bebidas/bebidas.component';
 import { ComidasComponent } from './pages/comidas/comidas.component';
+import { ItemCardapioComponent } from './components/item-cardapio/item-cardapio.component';
+import { PedidosComponent } from './pages/pedidos/pedidos.component';
 
 const ROUTES: Route[] = [
   {
-    path: '',
+    path: '', //sem nada pois entra na página principal, sem o / alguma coisa
     component: HomeComponent,
   },
   {
@@ -25,8 +27,12 @@ const ROUTES: Route[] = [
     component: ComidasComponent,
   },
   {
-    path: 'bebidas',
-    component: BebidasComponent,
+    path: 'bebidas', //caminho na url
+    component: BebidasComponent, //qual caminho deve chegar
+  },
+  {
+    path: 'pedidos',
+    component: PedidosComponent,
   },
 ];
 
@@ -40,6 +46,8 @@ const ROUTES: Route[] = [
     AboutComponent,
     BebidasComponent,
     ComidasComponent,
+    ItemCardapioComponent,
+    PedidosComponent,
   ],
   imports: [BrowserModule, HttpClientModule, RouterModule.forRoot(ROUTES)],
   providers: [],

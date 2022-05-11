@@ -1,10 +1,14 @@
 {
     "opcoes": [
       {
+        "id": "1",
+        "path": "comidas",
         "nome": "Comidas",
         "imagem": "assets/comida.jpg"
       },
       {
+        "id": "2",
+        "path": "bebidas",
         "nome": "Bebidas",
         "imagem": "assets/bebidas.jpg"
       }
@@ -15,13 +19,37 @@
           "imagem": "assets/comida.jpg",
           "descricao": "Batata frita no óleo vegetal, 250g",
           "preco": "R$20,00"
-      }    ],
+      },
+      {
+        "nome": "Polenta Frita",
+        "imagem": "assets/comida.jpg",
+        "descricao": "Polenta frita no óleo vegetal, 250g",
+        "preco": "R$20,00"
+    },
+    {
+      "nome": "Aipim Frito",
+      "imagem": "assets/comida.jpg",
+      "descricao": "Aipim frita no óleo vegetal, 250g",
+      "preco": "R$20,00"
+  }    ],
       "bebidas": [
         {
             "nome": "Gin tônica",
             "imagem": "assets/bebidas.jpg",
             "descricao": "Gin Tanqueray com água tônica Antartica",
             "preco": "R$20,00"
-        }    ]
+        },
+        {
+          "nome": "Caipirinha",
+          "imagem": "assets/bebidas.jpg",
+          "descricao": "Caipirinha de cachaça com limão e açúcar",
+          "preco": "R$20,00"
+      },
+      {
+        "nome": "Taça de Vinho Tinto",
+        "imagem": "assets/bebidas.jpg",
+        "descricao": "Taça de vinho tinto da vinicula ",
+        "preco": "R$20,00"
+    }    ]
   }
   

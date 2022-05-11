@@ -1,6 +1,6 @@
-export interface ICardapio {
-  nome: string;
-  imagem: string;
+import { IOpcao } from './opcao.model';
+
+export interface ICardapio extends IOpcao {
   descricao: string;
   preco: string;
 }

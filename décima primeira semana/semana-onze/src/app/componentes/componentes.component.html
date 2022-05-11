@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="tamanhoFonte" />
+
+<button
+  [ngStyle]="{
+    backgroundColor: tamanhoFonte == 0 ? 'grey' : '',
+    border: tamanhoFonte == 0 ? '2px solid grey' : '2px solid orange',
+    fontSize: tamanhoFonte + 'px'
+  }"
+>
+  Salvar
+</button>

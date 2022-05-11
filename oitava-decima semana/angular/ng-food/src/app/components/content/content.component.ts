@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { IOpcao } from 'src/app/models/opcao.model';
 
 @Component({
@@ -10,20 +11,20 @@ import { IOpcao } from 'src/app/models/opcao.model';
 export class ContentComponent implements OnInit {
   listaDeOpcoes: IOpcao[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private route: Router, private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.buscarNotificacoes();
+    this.gerarPagina();
   }
 
-  buscarNotificacoes() {
+  gerarPagina() {
     this.http
       .get<IOpcao[]>('http://localhost:3000/opcoes')
       .subscribe((resultado) => {
         this.listaDeOpcoes = resultado;
       });
   }
-  chamarClique() {
-    alert('item clicado');
+  redirecionar(path: string) {
+    this.route.navigateByUrl(path);
   }
 }

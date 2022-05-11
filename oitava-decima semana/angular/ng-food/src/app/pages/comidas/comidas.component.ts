@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICardapio } from 'src/app/models/lista.model';
-import { HttpClient } from '@angular/common/http';
+import { ComidasService } from 'src/app/services/comidas.service';
 
 @Component({
   selector: 'ngf-comidas',
@@ -8,18 +8,17 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./comidas.component.scss'],
 })
 export class ComidasComponent implements OnInit {
-  listaComidas: ICardapio[] = [];
-  constructor(private http: HttpClient) {}
+  listaComidas: ICardapio[] = []; //faz a lista com o modelo do cardapio
+
+  constructor(private comidaService: ComidasService) {} //usa o serviço na variável
 
   ngOnInit(): void {
-    this.buscarComidas();
+    this.buscarComidas(); //faz aparecer na tela quando inicia
   }
 
   buscarComidas() {
-    this.http
-      .get<ICardapio[]>('http://localhost:3000/comidas')
-      .subscribe((resultado) => {
-        this.listaComidas = resultado;
-      });
+    this.comidaService.devolverComidas().subscribe((resultado) => {
+      this.listaComidas = resultado;
+    }); //busca no fakebackend
   }
 }

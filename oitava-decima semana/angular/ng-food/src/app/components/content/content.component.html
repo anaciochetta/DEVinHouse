@@ -6,8 +6,10 @@
       <div class="col" *ngFor="let item of listaDeOpcoes">
         <div class="card shadow-sm">
           <img src="{{ item.imagem }}" alt="{{ item.nome }}" />
-          <div class="card-body">
-            <p class="card-text text-center">{{ item.nome }}</p>
+          <div class="card-body" (click)="redirecionar(item.path)">
+            <p class="card-text text-center">
+              {{ item.nome }}
+            </p>
           </div>
         </div>
       </div>

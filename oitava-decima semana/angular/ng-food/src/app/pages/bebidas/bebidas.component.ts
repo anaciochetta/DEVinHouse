@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ICardapio } from 'src/app/models/lista.model';
-import { HttpClient } from '@angular/common/http';
+import { BebidasService } from 'src/app/services/bebidas.service';
 
 @Component({
   selector: 'ngf-bebidas',
@@ -9,17 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class BebidasComponent implements OnInit {
   listaBebidas: ICardapio[] = [];
-  constructor(private http: HttpClient) {}
 
+  constructor(private bebidaService: BebidasService) {}
   ngOnInit(): void {
     this.buscarBebidas();
   }
 
   buscarBebidas() {
-    this.http
-      .get<ICardapio[]>('http://localhost:3000/bebidas')
-      .subscribe((resultado) => {
-        this.listaBebidas = resultado;
-      });
+    this.bebidaService.devolverBebidas().subscribe((resultado) => {
+      this.listaBebidas = resultado;
+    });
   }
 }
