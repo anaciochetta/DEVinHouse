@@ -12,4 +12,5 @@ export class ComidasService {
   devolverComidas(): Observable<ICardapio[]> {
     return this.http.get<ICardapio[]>('http://localhost:3000/comidas');
   } //faz buscar no fakebackend, db.json as informações salvas de comidas
+  //observable é um canal para dispara a chamada para a api, que está dentro do subscribe
 }

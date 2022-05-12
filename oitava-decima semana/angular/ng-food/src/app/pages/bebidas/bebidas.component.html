@@ -4,6 +4,7 @@
       <ngf-item-cardapio
         [itemCardapio]="item"
         *ngFor="let item of listaBebidas"
+        (adicionaListaPedido)="addBebida($event)"
       ></ngf-item-cardapio>
     </div>
   </div>

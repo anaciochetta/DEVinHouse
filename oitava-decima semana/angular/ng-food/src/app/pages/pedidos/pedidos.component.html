@@ -1,1 +1,45 @@
-<p>pedidos works!</p>
+<div class="pedido">
+  <div class="list-group">
+    <div *ngIf="listaItensPedido.length === 0" class="row">
+      <p>Não há pedido adicionados</p>
+    </div>
+    <div *ngFor="let item of listaItensPedido">
+      <a class="list-group-item d-flex gap-3 py-3" aria-current="true">
+        <img
+          src="{{ item.imagem }}"
+          alt="twbs"
+          width="32"
+          height="32"
+          class="rounded-circle flex-shrink-0"
+        />
+        <div class="d-flex gap-2 w-100 justify-content-between">
+          <div>
+            <h6 class="mb-0">{{ item.nome }}</h6>
+            <p class="mb-0 opacity-75">
+              {{ item.descricao }}
+            </p>
+          </div>
+
+          <small class="opacity-50 text-nowrap">{{ item.preco }}</small>
+          <small class="text-nowrap"
+            ><button
+              type="button"
+              class="btn btn-sm btn-danger btn-outline-secondary"
+              (click)="removerItem(item)"
+            >
+              remover
+            </button></small
+          >
+        </div>
+      </a>
+    </div>
+    <br />
+    <div *ngIf="listaItensPedido.length != 0">
+      <a class="list-group-item d-flex gap-3 py-3" aria-current="true"
+        ><button class="btn btn-danger" type="button" (click)="apagarTudo()">
+          Apagar lista de pedidos
+        </button></a
+      >
+    </div>
+  </div>
+</div>

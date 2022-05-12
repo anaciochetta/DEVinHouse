@@ -1,6 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ICardapio } from 'src/app/models/lista.model';
-import { IOpcao } from 'src/app/models/opcao.model';
 
 @Component({
   selector: 'ngf-item-cardapio',
@@ -13,5 +12,10 @@ export class ItemCardapioComponent implements OnInit {
   @Input() //decorator in a child component or directive signifies that the property can receive its value from its parent component
   itemCardapio?: ICardapio;
 
+  @Output() adicionaListaPedido = new EventEmitter();
   ngOnInit(): void {}
+
+  addListaPedido() {
+    this.adicionaListaPedido.emit(this.itemCardapio);
+  }
 }

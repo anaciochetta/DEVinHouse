@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PedidoService } from 'src/app/services/pedido.service';
 
 @Component({
   selector: 'ngf-header',
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   quantidadePedidos: number = 0;
 
-  constructor() {}
+  constructor(private pedidoService: PedidoService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.quantidadePedidos = this.pedidoService.pegarTotalItensPedido();
+  }
+
+  buscarTotalItem() {
+    return this.pedidoService.pegarTotalItensPedido();
+  }
 }
