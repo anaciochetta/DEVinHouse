@@ -9,6 +9,8 @@ import { ICardapio } from 'src/app/models/lista.model';
 export class ItemCardapioComponent implements OnInit {
   constructor() {}
 
+  quantidade: number = 0;
+
   @Input() //decorator in a child component or directive signifies that the property can receive its value from its parent component
   itemCardapio?: ICardapio;
 
@@ -16,6 +18,18 @@ export class ItemCardapioComponent implements OnInit {
   ngOnInit(): void {}
 
   addListaPedido() {
-    this.adicionaListaPedido.emit(this.itemCardapio);
+    const itemQuantidade = {
+      item: this.itemCardapio,
+      quantidade: this.quantidade,
+    };
+    this.adicionaListaPedido.emit(itemQuantidade);
+  }
+
+  maisQuantidade() {
+    this.quantidade = this.quantidade + 1;
+  }
+
+  menosQuantidade() {
+    this.quantidade = this.quantidade - 1;
   }
 }

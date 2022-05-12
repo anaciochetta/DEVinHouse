@@ -25,7 +25,7 @@ export class BebidasComponent implements OnInit {
     });
   }
 
-  addBebida(bebida: ICardapio) {
-    this.pedidoService.addItemPedido(bebida);
+  addBebida(bebida: any) {
+    this.pedidoService.addItensPedido(bebida.item, bebida.quantidade);
   }
 }

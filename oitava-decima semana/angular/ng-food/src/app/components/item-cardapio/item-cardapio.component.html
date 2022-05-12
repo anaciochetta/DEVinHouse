@@ -14,8 +14,21 @@
           >
             Adicionar ao pedido
           </button>
-          <button type="button" class="btn btn-sm btn-outline-secondary">
-            Edit
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="menosQuantidade()"
+          >
+            -
+          </button>
+          <button class="btn btn-sm btn-outline-secondary" disabled>
+            {{ quantidade }}
+          </button>
+
+          <button
+            class="btn btn-sm btn-outline-secondary"
+            (click)="maisQuantidade()"
+          >
+            +
           </button>
         </div>
         <small class="text-muted">{{ itemCardapio?.preco }}</small>

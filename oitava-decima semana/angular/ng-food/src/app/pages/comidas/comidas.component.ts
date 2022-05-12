@@ -26,7 +26,7 @@ export class ComidasComponent implements OnInit {
     }); //busca no fakebackend
   }
 
-  addComida(comida: ICardapio, quantidade: number) {
-    this.pedidoService.addItensPedido(comida, quantidade);
+  addComida(comida: any) {
+    this.pedidoService.addItensPedido(comida.item, comida.quantidade);
   }
 }

@@ -14,7 +14,10 @@ export class PedidoService {
   }
 
   addItensPedido(item: ICardapio, quantidade: number) {
-    this.itensPedidoLista.push(item);
+    const itens = Array(quantidade).fill(item);
+    this.itensPedidoLista.push(...itens);
+
+    console.log('itens', this.itensPedidoLista);
   }
 
   limparPedido() {
