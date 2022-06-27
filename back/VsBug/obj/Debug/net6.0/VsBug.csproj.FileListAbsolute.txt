@@ -1,0 +1,15 @@
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\bin\Debug\net6.0\VsBug.exe
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\bin\Debug\net6.0\VsBug.deps.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\bin\Debug\net6.0\VsBug.runtimeconfig.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\bin\Debug\net6.0\VsBug.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\bin\Debug\net6.0\VsBug.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.csproj.AssemblyReference.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.AssemblyInfoInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.AssemblyInfo.cs
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.csproj.CoreCompileInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\refint\VsBug.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\VsBug.genruntimeconfig.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\VsBug\obj\Debug\net6.0\ref\VsBug.dll
