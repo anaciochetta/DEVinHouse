@@ -8,14 +8,12 @@ public static class Editor
     {
         Console.Clear(); //limpa o console
 
-        Console.SetCursorPosition(3, 2);
         Console.WriteLine("Modo Editor");
-        Console.SetCursorPosition(3, 3);
+        Console.WriteLine(" (pressione ESC para finalizar)");
         Console.WriteLine("=================");
 
         Run();
 
-        Console.ReadLine();
     }
 
     public static void Run()
@@ -44,5 +42,25 @@ public static class Editor
         htmlBuilder.Append(@"
         </body>
         </html>");
+
+        SaveFile(htmlBuilder.ToString());
+    }
+
+    public static void SaveFile(string content)
+    {
+        var directory = new DirectoryInfo("./arquivos");
+        if (!directory.Exists)
+            directory.Create(); //verifica e cria o diretório
+
+        Console.Clear();
+        Console.Write("Informe o nome do arquivo (sem a extensão): ");
+        var fileName = Console.ReadLine();//pega o nome do arquivo
+
+        var file = new StreamWriter($"{directory.FullName}/{fileName}.html"); //cria o caminho do arquivo
+        file.Write(content); //salva o que foi escrito
+        file.Close(); //fecha o arquivo para poder ser usado novamente
+
+        Console.WriteLine($"O arquivo {fileName}.html foi salvo com sucesso em {directory.FullName}!");
+        Console.ReadLine();
     }
 }
