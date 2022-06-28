@@ -1,0 +1,15 @@
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\bin\Debug\net6.0\CoisaDePagamento.exe
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\bin\Debug\net6.0\CoisaDePagamento.deps.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\bin\Debug\net6.0\CoisaDePagamento.runtimeconfig.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\bin\Debug\net6.0\CoisaDePagamento.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\bin\Debug\net6.0\CoisaDePagamento.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.csproj.AssemblyReference.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.AssemblyInfoInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.AssemblyInfo.cs
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.csproj.CoreCompileInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\refint\CoisaDePagamento.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\CoisaDePagamento.genruntimeconfig.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\back\CoisaDePagamento\obj\Debug\net6.0\ref\CoisaDePagamento.dll
