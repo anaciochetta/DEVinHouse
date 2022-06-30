@@ -1,8 +1,9 @@
-namespace GeraEstoque;
+using GeraEstoque.Repositories;
+namespace GeraEstoque.Screens;
 
-public class Menu
+public static class MenuScreen
 {
-    public static void Show()
+    public static void Init(ProductRepository repository)
     {
         Console.Clear();
         DrawCanvas();
@@ -12,7 +13,8 @@ public class Menu
         switch (option)
         {
             case 1:
-                Register.ProductRegister();
+                CreateProductScreen.Init(repository);
+                Init(repository);
                 break;
             case 2: break;
             case 0:
@@ -20,10 +22,11 @@ public class Menu
                 Environment.Exit(0);
                 break;
             default:
-                Show();
+                Init(repository);
                 break;
         }
     }
+
     static void ShowOptions()
     {
         Console.SetCursorPosition(3, 2);

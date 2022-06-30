@@ -1,17 +1,21 @@
-namespace GeraEstoque;
+using GeraEstoque.Models;
+using GeraEstoque.Repositories;
 
-public class Register
+
+namespace GeraEstoque.Screens;
+
+
+public static class CreateProductScreen
 {
-    public static void ProductRegister()
+    public static void Init(ProductRepository repository)
     {
         Console.Clear();
-        Menu.DrawCanvas();
+        MenuScreen.DrawCanvas();
 
-        ShowRegister();
-
+        CreateProduct((ProductRepository)repository);
     }
 
-    static void ShowRegister()
+    static void CreateProduct(ProductRepository repository)
     {
         Console.SetCursorPosition(3, 2);
         Console.WriteLine("Cadastro de produto");
@@ -31,17 +35,18 @@ public class Register
         Console.Write("Valor de venda: ");
         var salePrice = short.Parse(Console.ReadLine());
 
-        SaveProduct(productName, inventory, purchasePrice, salePrice);
+        repository.ProductList.Add(new Product(productName, inventory, purchasePrice, salePrice));
+
+        ShowRegisteredProduct(productName, inventory, purchasePrice, salePrice);
     }
 
-    static void SaveProduct(string productName, short inventory, short purchasePrice, short salePrice)
+    static void ShowRegisteredProduct(string productName, short inventory, short purchasePrice, short salePrice)
     {
         Console.SetCursorPosition(3, 2);
         Console.WriteLine("Produto cadastrado com sucesso!");
 
-        var id = Guid.NewGuid();
         Console.SetCursorPosition(3, 4);
-        Console.WriteLine($"Id: {id}");
+        Console.WriteLine($"Id: ");
         Console.SetCursorPosition(3, 5);
         Console.Write($"Nome: {productName}");
         Console.SetCursorPosition(3, 6);
@@ -54,6 +59,6 @@ public class Register
         Console.SetCursorPosition(2, 12);
         Console.WriteLine("Pressione qualquer tecla para voltar ao menu.");
         Console.ReadKey();
-        Menu.Show();
+        //MenuScreen.Init((ProductRepository)repository);
     }
 }
