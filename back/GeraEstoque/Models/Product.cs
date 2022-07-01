@@ -1,5 +1,5 @@
 namespace GeraEstoque.Models;
-class Product
+public class Product
 {
     Guid Id;
     string ProductName;
@@ -20,7 +20,7 @@ class Product
 
     public override string ToString()
     {
-        string text = $"Produto: Id: {Id} |  Nome: {ProductName} | Qtd: {Inventory} | R$ Compra: {PurchasePrice} | R$ Venda: {SalePrice}";
+        string text = $"Produto: Nome: {ProductName} | Qtd: {Inventory} | R$ Compra: {PurchasePrice} | R$ Venda: {SalePrice}";
         return text;
     }
 

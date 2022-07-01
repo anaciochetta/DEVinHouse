@@ -12,7 +12,7 @@ public static class CreateProductScreen
         Console.Clear();
         MenuScreen.DrawCanvas();
 
-        CreateProduct((ProductRepository)repository);
+        CreateProduct(repository);
     }
 
     static void CreateProduct(ProductRepository repository)

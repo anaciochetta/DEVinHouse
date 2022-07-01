@@ -1,4 +1,5 @@
 using GeraEstoque.Repositories;
+
 namespace GeraEstoque.Screens;
 
 public static class MenuScreen
@@ -16,7 +17,10 @@ public static class MenuScreen
                 CreateProductScreen.Init(repository);
                 Init(repository);
                 break;
-            case 2: break;
+            case 5:
+                ProductListScreen.Init(repository);
+                Init(repository);
+                break;
             case 0:
                 Console.Clear();
                 Environment.Exit(0);
@@ -35,17 +39,19 @@ public static class MenuScreen
         Console.WriteLine("---------------------------------");
 
         Console.SetCursorPosition(3, 5);
-        Console.WriteLine("1 - Cadastrar Produto");
+        Console.WriteLine("1 - Cadastrar produto");
         Console.SetCursorPosition(3, 6);
-        Console.WriteLine("2 - Consultar Produto");
+        Console.WriteLine("2 - Consultar produto");
         Console.SetCursorPosition(3, 7);
-        Console.WriteLine("3 - Modificar Produto");
+        Console.WriteLine("3 - Modificar produto");
         Console.SetCursorPosition(3, 8);
-        Console.WriteLine("4 - Excluir Produto");
+        Console.WriteLine("4 - Excluir produto");
         Console.SetCursorPosition(3, 9);
+        Console.WriteLine("5 - Listar todos os produtos");
+        Console.SetCursorPosition(3, 10);
         Console.WriteLine("0 - Sair");
 
-        Console.SetCursorPosition(3, 12);
+        Console.SetCursorPosition(3, 13);
         Console.Write("Digite a opção: ");
     }
     public static void DrawCanvas()
