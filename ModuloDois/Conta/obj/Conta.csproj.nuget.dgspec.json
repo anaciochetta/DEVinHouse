@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj",
         "projectName": "Conta",
-        "projectPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\Conta.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Conta\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
