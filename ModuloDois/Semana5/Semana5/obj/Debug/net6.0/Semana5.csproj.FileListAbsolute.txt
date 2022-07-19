@@ -1,0 +1,15 @@
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\bin\Debug\net6.0\Semana5.exe
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\bin\Debug\net6.0\Semana5.deps.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\bin\Debug\net6.0\Semana5.runtimeconfig.json
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\bin\Debug\net6.0\Semana5.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\bin\Debug\net6.0\Semana5.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.csproj.AssemblyReference.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.AssemblyInfoInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.AssemblyInfo.cs
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.csproj.CoreCompileInputs.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\refint\Semana5.dll
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.pdb
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\Semana5.genruntimeconfig.cache
+C:\Users\ANA\Desktop\dev\DEVinHouse\ModuloDois\Semana5\Semana5\obj\Debug\net6.0\ref\Semana5.dll
