@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\back\\JogoInHouse\\JogoInHouse.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\JogoInHouse\\JogoInHouse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\back\\JogoInHouse\\JogoInHouse.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\JogoInHouse\\JogoInHouse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\back\\JogoInHouse\\JogoInHouse.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\JogoInHouse\\JogoInHouse.csproj",
         "projectName": "JogoInHouse",
-        "projectPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\back\\JogoInHouse\\JogoInHouse.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\JogoInHouse\\JogoInHouse.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\back\\JogoInHouse\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\JogoInHouse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

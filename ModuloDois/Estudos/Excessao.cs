@@ -3,7 +3,7 @@ namespace Estudos;
 public class Excessao
 {
     //public void ExcessaoExemplo(){}
-    try
+    /* try
     {
         Console.WriteLine("Digite um número: ");
         int numero = int.Parse(Console.ReadLine());
@@ -14,6 +14,6 @@ public class Excessao
     {
         
         throw;
-    }
-    
+    } */
+
 }

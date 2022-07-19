@@ -6,14 +6,14 @@ ValorDesconto */
 
 namespace FormularioInscricao;
 
-class CobrarCurso
+public class CobrarCurso
 {
-    private decimal ValorCurso { get; set; }
-    private decimal ValorMulta { get; set; }
-    private decimal ValorDesconto { get; set; }
+    public decimal ValorCurso { get; private set; }
+    public decimal ValorMulta { get; private set; }
+    public decimal ValorDesconto { get; private set; }
     public decimal Resultado { get; set; }
 
-    public CobrarCurso(decimal valorCurso, decimal valorMulta, decimal valorDesconto, decimal resultado)
+    public CobrarCurso(decimal valorCurso, decimal valorMulta, decimal valorDesconto)
     {
         ValorCurso = valorCurso;
         ValorMulta = valorMulta;
@@ -23,25 +23,14 @@ class CobrarCurso
 
     private decimal CalculaCurso(decimal valorCurso, decimal valorDesconto, decimal valorMulta)
     {
-        if (valorMulta == 0)
+        decimal resultado;
+        if (valorMulta > 0)
         {
-            var resultado = valorCurso - valorDesconto;
+            resultado = valorCurso + valorMulta;
             return resultado;
         }
-        else if (valorMulta > 0)
-        {
-            var resultado = valorCurso + valorMulta;
-            return resultado;
-        }
+        resultado = valorCurso - valorDesconto;
+        return resultado;
     }
 }
 
-/* Criar um método da classe private para efetuar o calculo do curso preencher a propriedade Resultado da classe CobrarCurso
-
-Se valor da multa for maior que zero não aplicar desconto
-
-Resultado = Valor Curso + Valor Multa
-Se valor da multa for igual a zero aplicar desconto
-
-Resultado = Valor Curso - Valor Desconto
-Atividade */

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj",
         "projectName": "EmpresaJ",
-        "projectPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\EmpresaJ.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\EmpresaJ\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",

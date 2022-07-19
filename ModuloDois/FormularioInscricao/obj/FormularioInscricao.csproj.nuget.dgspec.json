@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj",
         "projectName": "FormularioInscricao",
-        "projectPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\FormularioInscricao.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\FormularioInscricao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",

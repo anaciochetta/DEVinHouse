@@ -6,9 +6,11 @@ class Program
 {
     static void Main(string[] args)
     {
-        ProductRepository repository = new ProductRepository();
+        /* ProductRepository repository = new ProductRepository();
 
-        MenuScreen.Init(repository);
+        MenuScreen.Init(repository); */
+
+        ExemploMenu.ExemploMenus();
 
     }
 }

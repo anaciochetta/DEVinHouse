@@ -1,11 +1,11 @@
 namespace FormularioInscricao;
 
-class CursoSelecionado
+public class CursoSelecionado
 {
-    public List<string> ListaCursos; //propiedade da instância
+    public IList<FichaInscricao> Cursos { get; set; }
 
-    public void ProductRepository()
+    public CursoSelecionado()
     {
-        ListaCursos = new List<string>();
+        List<FichaInscricao> Cursos = new();
     }
 }

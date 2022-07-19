@@ -30,7 +30,7 @@ public class Classe
         //métodos dentro da classe
         public Pagamento(string bandeira) //construtor 
         {
-            Id = Guid.NewGuid();
+            //Id = Guid.NewGuid();
             Bandeira = bandeira;
             System.Console.WriteLine("Criou uma instância");
         }
