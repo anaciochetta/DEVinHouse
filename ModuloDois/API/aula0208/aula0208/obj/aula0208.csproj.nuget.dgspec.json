@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\aula0208\\aula0208\\aula0208.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\aula0208\\aula0208\\aula0208.csproj": {}
   },
   "projects": {
-    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\aula0208\\aula0208\\aula0208.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\aula0208\\aula0208\\aula0208.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\aula0208\\aula0208\\aula0208.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\aula0208\\aula0208\\aula0208.csproj",
         "projectName": "aula0208",
-        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\aula0208\\aula0208\\aula0208.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\aula0208\\aula0208\\aula0208.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\aula0208\\aula0208\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\aula0208\\aula0208\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",

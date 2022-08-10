@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mdysB4hiJhMmmOjl2f4V162ht8p+dCSLt4fQQsOdFcBodDri/Rl/MWjlQIGTY622DchkxNxA4I3nvoRpFWr16w==",
+  "dgSpecHash": "YZ/WTGP35JqPexlS6ZzyMqMqzu6cwnSbB2LRhRG2niYERxlGy+4XYsksIVAFfY0UEUnQSK2nidIgaivcUQtyRg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\DevMusic.csproj",
+  "projectFilePath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\DevMusic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ANA\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ANA\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\DevMusic.csproj": {}
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\DevMusic.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\DevMusic.csproj": {
+    "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\DevMusic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\DevMusic.csproj",
+        "projectUniqueName": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\DevMusic.csproj",
         "projectName": "DevMusic",
-        "projectPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\DevMusic.csproj",
+        "projectPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\DevMusic.csproj",
         "packagesPath": "C:\\Users\\ANA\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\Nova pasta\\DevMusic\\DevMusic\\obj\\",
+        "outputPath": "c:\\Users\\ANA\\Desktop\\dev\\DEVinHouse\\ModuloDois\\API\\DevMusic\\DevMusic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ANA\\AppData\\Roaming\\NuGet\\NuGet.Config",
