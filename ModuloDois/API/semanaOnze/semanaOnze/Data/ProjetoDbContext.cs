@@ -107,6 +107,7 @@ public class ProjetoDbContext : DbContext
             .HasDefaultValue(1); //e tem como padrão uma dose
 
         modelBuilder.Entity<Vacina>()
+        //predefine alguns dados relevantes para a aplicação
             .HasData(new[]{
                 new Vacina(){
                     Id = 1,

@@ -8,5 +8,5 @@ public class CarteiraTrabalho
     //chave estrangeira
     public int ClienteId { get; set; }
     //propriedade de navegação
-    public Cliente Cliente { get; set; }
+    public Cliente Cliente { internal get; set; } //internal para não criar loop de dependencia
 }
