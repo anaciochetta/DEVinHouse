@@ -32,7 +32,7 @@ namespace DevMusic.Controllers
             [FromRoute] int artistId
         )
         {
-            var artist = _artistRepository.GetArtistById(artistId);
+            var artist = _artistRepository.GetById(artistId);
             _artistRepository.Update(artist);
             return artist;
         }
@@ -70,7 +70,7 @@ namespace DevMusic.Controllers
             [FromQuery] string filter
         )
         {
-            return _artistRepository.GetArtistByName(filter); ;
+            return _artistRepository.GetByName(filter); ;
         }
     }
 }

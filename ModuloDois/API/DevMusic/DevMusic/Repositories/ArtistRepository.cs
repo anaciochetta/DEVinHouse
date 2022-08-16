@@ -19,7 +19,7 @@ public class ArtistRepository
     }
     public Artist Update(Artist artist)
     {
-        var currentArtist = GetArtistById(artist.Id);
+        var currentArtist = GetById(artist.Id);
 
         currentArtist.Name = artist.Name;
         currentArtist.ArtisticName = artist.ArtisticName;
@@ -30,7 +30,7 @@ public class ArtistRepository
     }
     public Artist UpdatePhoto(string artistPhoto, int id)
     {
-        var currentArtist = GetArtistById(id);
+        var currentArtist = GetById(id);
 
         currentArtist.UrlPhoto = artistPhoto;
 
@@ -38,20 +38,19 @@ public class ArtistRepository
     }
     public void Remove(int id)
     {
-        var currentArtist = GetArtistById(id);
+        var currentArtist = GetById(id);
         _artists.Remove(currentArtist);
     }
     public List<Artist> GetAll()
     {
         return _artists;
     }
-    public Artist GetArtistById(int id)
+    public Artist GetById(int id)
     {
         return _artists.FirstOrDefault(list => list.Id == id);
     }
-    public List<Artist> GetArtistByName(string name)
+    public List<Artist> GetByName(string name)
     {
         return _artists.Where(list => list.Name == name || list.ArtisticName == name).ToList();
     }
-
 }

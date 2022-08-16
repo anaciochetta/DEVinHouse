@@ -7,6 +7,5 @@
         public TimeSpan Duration { get; set; }
         public Album Album { get; set; }
         public Artist Artist { get; set; }
-
     }
 }
