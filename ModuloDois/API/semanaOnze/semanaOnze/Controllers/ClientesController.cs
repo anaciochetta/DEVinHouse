@@ -24,7 +24,7 @@ public class ClienteController : ControllerBase
         [FromQuery] DateTime? dataFim
     )
     {
-        //SELECT * FROM CLIENTES WHERE NUMERODOSES = ?
+        //SELECT * FROM CLIENTES WHERE DATANASCIMENTO = ??
         var query = _context.Clientes.AsQueryable();
 
         if (dataInicio.HasValue)
