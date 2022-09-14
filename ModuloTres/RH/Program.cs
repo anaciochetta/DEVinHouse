@@ -23,3 +23,8 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+//PACOTES INSTALADOS:
+
+//dotnet add package Microsoft.AspNetCore.Authentication
+//dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
