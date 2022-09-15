@@ -5,47 +5,56 @@ using System.Threading.Tasks;
 
 namespace RH.Repositories
 {
-    public class FuncionarioRepository
+    public static class FuncionarioRepository
     {
 
-        //Lista de funcionários estática
+        public static List<Funcionario> funcionariosLista = new List<Funcionario>
+        {
+            new Funcionario{
+                Id = 1,
+                Nome = "João",
+                Email = "joão@gmail.com",
+                Senha = "123",
+                Permissao = Permissoes.Admnistrador,
+                Salario = 5000
+            }
+        };
 
         //Obter
-        public IList<Funcionario> Get()
+        public static IList<Funcionario> Get()
         {
-            var funcionarios = lógica da lista;
-            return funcionarios;
+            return funcionariosLista;
         }
 
-        public IList<Funcionario> GetById(int id)
+        public static Funcionario GetById(int id)
         {
-            var funcionarios = lógica da lista.Find(id);
+            var funcionarios = funcionariosLista.FirstOrDefault(x => x.Id == id);
             return funcionarios;
         }
 
         //ObterPorUsuarioESenha
-        public Funcionario GetByLoginAndPassword(string login, string senha)
+        public static Funcionario GetByLoginAndPassword(string login, string senha)
         {
-            var funcionario = lógica.Where(x => x.Senha == senha && x.Login == login);
+            var funcionario = funcionariosLista.FirstOrDefault(x => x.Email == login && x.Senha == senha);
             return funcionario;
         }
 
         //Adcionar - void??
-        public void Add(Funcionario funcionario)
+        public static void Add(Funcionario funcionario)
         {
-            funcionario.Id = lógica de gerar id;
-            lista.Add(funcionario);
+            //funcionario.Id = lógica de gerar id;
+            funcionariosLista.Add(funcionario);
         }
 
         //Editar
-        public void Put(int id)
+        public static void Put(int id)
         {
             //não permite editar o id
             //lógica de editar
         }
 
         //Excluir
-        public void Delete(Funcionario funcionario)
+        public static void Delete(Funcionario funcionario)
         {
             //lógica de editar
         }

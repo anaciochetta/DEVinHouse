@@ -1,32 +1,30 @@
+using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
 using System.Security.Claims;
 using System.Text;
-using autenticacao.Models;
-using autenticacao.Security;
+using System.Threading.Tasks;
 using Microsoft.IdentityModel.Tokens;
+using RH.Repositories;
+using RH.Security;
 
-namespace autenticacao.Services
+namespace RH.Services
 {
     public static class TokenService
     {
-        //classe utilizada para fornecer informações para o token
-        public static string GenerateToken(User user)
+        public static string GenerateToken(Funcionario funcionario)
         {
-            //o responsável pela criação do token
             var tokenHandler = new JwtSecurityTokenHandler();
-            //transforma chave secreta em bytes
             var key = Encoding.ASCII.GetBytes(Settings.Secret);
 
-            //congifuração do token
             var tokenDescriptor = new SecurityTokenDescriptor
             {
-                //informações adcionais
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                    new Claim(ClaimTypes.Name, user.Email),
-                    new Claim(ClaimTypes.Role, user.Role),
+                    new Claim(ClaimTypes.Name, funcionario.Email),
+                    //new Claim(ClaimTypes.Role, funcionario.Permissao),
                 }),
-                //tempo de expiração
                 Expires = DateTime.UtcNow.AddHours(2),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };

@@ -12,30 +12,28 @@ namespace RH.Controller
     [Route("[controller]")]
     public class FuncionariosController : ControllerBase
     {
-        private readonly FuncionarioRepository _repository;
-
-        public FuncionariosController(FuncionarioRepository repository)
-        {
-            _repository = repository;
-        }
-
         [HttpGet]
         public IActionResult Get()
         {
-            return _repository.Get();
+            var funcionarios = FuncionarioRepository.Get();
+            if (funcionarios == null)
+            {
+                return NoContent();
+            }
+            return Ok(funcionarios);
         }
 
         [HttpGet]
         public IActionResult GetByLoginAndPassword(string login, string senha)
         {
-            var funcionario = _repository.GetByLoginAndPassword(login, senha);
-            return funcionario;
+            var funcionario = FuncionarioRepository.GetByLoginAndPassword(login, senha);
+            return Ok(funcionario);
         }
 
         [HttpDelete]
         public void Delete(Funcionario funcionario)
         {
-            _repository.Delete(funcionario);
+            FuncionarioRepository.Delete(funcionario);
         }
     }
 }
