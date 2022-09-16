@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using autenticacao.DTO;
+using autenticacao.Enums;
 using autenticacao.Models;
 
 namespace autenticacao.Repositories
@@ -17,14 +18,14 @@ namespace autenticacao.Repositories
                 Name = "Ana",
                 Email = "ana@gmail.com",
                 Password = "123",
-                Role = "Admin"
+                Role = Permissoes.Diretor
             },
             new User{
                 Id = 1,
                 Name = "João",
                 Email = "joão@gmail.com",
                 Password = "123",
-                Role = "User"
+                Role = Permissoes.Professor
             }
         };
         public static User VerificarUsuarioESenha(UserDTO dto)
