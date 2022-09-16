@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using RH.DTOs;
 using RH.Repositories;
 
 namespace RH.Controller
@@ -16,18 +17,38 @@ namespace RH.Controller
         public IActionResult Get()
         {
             var funcionarios = FuncionarioRepository.Get();
-            if (funcionarios == null)
-            {
-                return NoContent();
-            }
             return Ok(funcionarios);
         }
 
         [HttpGet]
+        [Route("login-senha")]
         public IActionResult GetByLoginAndPassword(string login, string senha)
         {
             var funcionario = FuncionarioRepository.GetByLoginAndPassword(login, senha);
             return Ok(funcionario);
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] FuncionarioDTO funcionario)
+        {
+            var novoFuncionario = new Funcionario
+            {
+                Nome = funcionario.Nome,
+                Email = funcionario.Email,
+                Senha = funcionario.Senha,
+                Salario = funcionario.Salario
+            };
+
+            FuncionarioRepository.Post(novoFuncionario);
+            return StatusCode(StatusCodes.Status201Created);
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult Put(Guid id, [FromBody] FuncionarioDTO funcionario)
+        {
+
+            var novoF = FuncionarioRepository.Put(id, funcionario);
+            return Ok(novoF);
         }
 
         [HttpDelete]

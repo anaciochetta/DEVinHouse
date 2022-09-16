@@ -45,7 +45,7 @@ public class ClienteRepository
 
     public Cliente Adicionar(Cliente cliente)
     {
-        cliente.Id = _idIndice; atualari
+        cliente.Id = _idIndice;
 
         _idIndice++;
 

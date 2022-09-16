@@ -5,11 +5,9 @@ using System.Threading.Tasks;
 
 namespace RH.DTOs
 {
-    public class FuncionarioDTO
+    public class LoginDTO
     {
-        public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public int Salario { get; set; }
     }
 }

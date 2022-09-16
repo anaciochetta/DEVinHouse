@@ -1,7 +1,10 @@
+using System.ComponentModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Threading.Tasks;
+using RH.DTOs;
 
 namespace RH.Repositories
 {
@@ -11,7 +14,7 @@ namespace RH.Repositories
         public static List<Funcionario> funcionariosLista = new List<Funcionario>
         {
             new Funcionario{
-                Id = 1,
+                Id = new Guid("d381514d-17db-419c-93e6-d330ff84c12c"),
                 Nome = "João",
                 Email = "joão@gmail.com",
                 Senha = "123",
@@ -26,7 +29,7 @@ namespace RH.Repositories
             return funcionariosLista;
         }
 
-        public static Funcionario GetById(int id)
+        public static Funcionario GetById(Guid id)
         {
             var funcionarios = funcionariosLista.FirstOrDefault(x => x.Id == id);
             return funcionarios;
@@ -39,24 +42,34 @@ namespace RH.Repositories
             return funcionario;
         }
 
-        //Adcionar - void??
-        public static void Add(Funcionario funcionario)
+        //Adcionar 
+        public static Funcionario Post(Funcionario funcionario)
         {
-            //funcionario.Id = lógica de gerar id;
+            funcionario.Id = Guid.NewGuid();
             funcionariosLista.Add(funcionario);
+
+            return funcionario;
         }
 
         //Editar
-        public static void Put(int id)
+        public static FuncionarioDTO Put(Guid id, FuncionarioDTO novoF)
         {
-            //não permite editar o id
-            //lógica de editar
+            var funcionario = GetById(id);
+
+            funcionario.Nome = novoF.Nome;
+            funcionario.Email = novoF.Email;
+            funcionario.Senha = novoF.Senha;
+            funcionario.Salario = novoF.Salario;
+            //funcionario.Permissao = novoF.Permissao;
+
+            return novoF;
         }
 
         //Excluir
         public static void Delete(Funcionario funcionario)
         {
-            //lógica de editar
+            var f = GetById(funcionario.Id);
+            funcionariosLista.Remove(f);
         }
 
 
