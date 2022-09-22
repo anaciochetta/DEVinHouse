@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -44,7 +45,7 @@ namespace RH.Controller
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(Guid id, [FromBody] FuncionarioDTO funcionario)
+        public IActionResult Put([FromRoute] Guid id, [FromBody] FuncionarioDTO funcionario)
         {
 
             var novoF = FuncionarioRepository.Put(id, funcionario);
@@ -52,9 +53,11 @@ namespace RH.Controller
         }
 
         [HttpDelete]
-        public void Delete(Funcionario funcionario)
+        public void Delete(Guid id)
         {
+            var funcionario = FuncionarioRepository.GetById(id);
             FuncionarioRepository.Delete(funcionario);
+
         }
     }
 }

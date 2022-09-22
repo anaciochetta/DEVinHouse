@@ -11,5 +11,6 @@ namespace RH.DTOs
         public string Email { get; set; }
         public string Senha { get; set; }
         public int Salario { get; set; }
+        public Permissoes Permissao { get; set; }
     }
 }

@@ -31,8 +31,8 @@ namespace RH.Repositories
 
         public static Funcionario GetById(Guid id)
         {
-            var funcionarios = funcionariosLista.FirstOrDefault(x => x.Id == id);
-            return funcionarios;
+            /* var funcionario = */
+            return funcionariosLista.Find(x => x.Id == id);
         }
 
         //ObterPorUsuarioESenha
@@ -60,7 +60,7 @@ namespace RH.Repositories
             funcionario.Email = novoF.Email;
             funcionario.Senha = novoF.Senha;
             funcionario.Salario = novoF.Salario;
-            //funcionario.Permissao = novoF.Permissao;
+            funcionario.Permissao = novoF.Permissao;
 
             return novoF;
         }
@@ -68,10 +68,8 @@ namespace RH.Repositories
         //Excluir
         public static void Delete(Funcionario funcionario)
         {
-            var f = GetById(funcionario.Id);
-            funcionariosLista.Remove(f);
+            funcionariosLista.Remove(funcionario);
         }
-
 
     }
 }
