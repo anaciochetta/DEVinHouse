@@ -16,9 +16,25 @@ namespace RH.Repositories
             new Funcionario{
                 Id = new Guid("d381514d-17db-419c-93e6-d330ff84c12c"),
                 Nome = "João",
-                Email = "joão@gmail.com",
+                Email = "morango@gmail.com",
                 Senha = "123",
                 Permissao = Permissoes.Admnistrador,
+                Salario = 5000
+            },
+            new Funcionario{
+                Id = new Guid("d381514d-17db-419c-93e6-d330ff84c12c"),
+                Nome = "Roberta",
+                Email = "abacaxi@gmail.com",
+                Senha = "321",
+                Permissao = Permissoes.Funcionario,
+                Salario = 5000
+            },
+            new Funcionario{
+                Id = new Guid("d381514d-17db-419c-93e6-d330ff84c12c"),
+                Nome = "Eduarda",
+                Email = "banana@gmail.com",
+                Senha = "213",
+                Permissao = Permissoes.Gerente,
                 Salario = 5000
             }
         };
@@ -52,17 +68,12 @@ namespace RH.Repositories
         }
 
         //Editar
-        public static FuncionarioDTO Put(Guid id, FuncionarioDTO novoF)
+        public static FuncionarioDTO Put(Guid id, FuncionarioDTO funcionarioEditado)
         {
             var funcionario = GetById(id);
+            funcionario.Salario = funcionarioEditado.Salario;
 
-            funcionario.Nome = novoF.Nome;
-            funcionario.Email = novoF.Email;
-            funcionario.Senha = novoF.Senha;
-            funcionario.Salario = novoF.Salario;
-            funcionario.Permissao = novoF.Permissao;
-
-            return novoF;
+            return funcionarioEditado;
         }
 
         //Excluir

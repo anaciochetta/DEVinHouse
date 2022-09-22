@@ -13,7 +13,7 @@ namespace RH.Controller
     {
         [HttpPost]
         [Route("login")]
-        public IActionResult Login([FromBody] FuncionarioDTO dto)
+        public IActionResult Login([FromBody] LoginDTO dto)
         {
 
             var user = FuncionarioRepository.GetByLoginAndPassword(dto.Email, dto.Senha);

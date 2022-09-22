@@ -8,19 +8,27 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using RH.DTOs;
 using RH.Repositories;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.OpenApi.Extensions;
 
 namespace RH.Controller
 {
     [Route("[controller]")]
     public class FuncionariosController : ControllerBase
     {
+        [Authorize]
         [HttpGet]
         public IActionResult Get()
         {
+            if (User.IsInRole(Permissoes.Funcionario.GetDisplayName()))
+            {
+                return Ok((FuncionarioRepository.Get()).Select(f => new { f.Nome, f.Permissao }));
+            }
             var funcionarios = FuncionarioRepository.Get();
             return Ok(funcionarios);
         }
 
+        [Authorize]
         [HttpGet]
         [Route("login-senha")]
         public IActionResult GetByLoginAndPassword(string login, string senha)
@@ -29,6 +37,8 @@ namespace RH.Controller
             return Ok(funcionario);
         }
 
+        //cadastrar-novo-funcionario
+        [Authorize(Roles = "Administrador")]
         [HttpPost]
         public IActionResult Post([FromBody] FuncionarioDTO funcionario)
         {
@@ -44,20 +54,33 @@ namespace RH.Controller
             return StatusCode(StatusCodes.Status201Created);
         }
 
+        //alterar-salario
+        [Authorize(Roles = "Gerente")]
         [HttpPut("{id}")]
         public IActionResult Put([FromRoute] Guid id, [FromBody] FuncionarioDTO funcionario)
         {
-
-            var novoF = FuncionarioRepository.Put(id, funcionario);
-            return Ok(novoF);
+            var funcionarioEditado = FuncionarioRepository.Put(id, funcionario);
+            return Ok(funcionarioEditado);
         }
 
+        [Authorize(Roles = "Administrador, Gerente")]
+        //excluir-funcionario
         [HttpDelete]
-        public void Delete(Guid id)
+        public ActionResult Delete(Guid id)
         {
             var funcionario = FuncionarioRepository.GetById(id);
             FuncionarioRepository.Delete(funcionario);
+            return NoContent();
+        }
 
+        [Authorize(Roles = "Administrador")]
+        //excluir-gerente
+        [HttpDelete("delete-gerente")]
+        public ActionResult DeleteGerente(Guid id)
+        {
+            var funcionario = FuncionarioRepository.GetById(id);
+            FuncionarioRepository.Delete(funcionario);
+            return NoContent();
         }
     }
 }
