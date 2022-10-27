@@ -48,6 +48,7 @@ context("Teste de Conexão", () => {
         expect(val).to.be.equal("Valor Total: 1181");
       });
 
+    //valida número
     cy.get("#txtV1")
       .invoke("prop", "value")
       .then((valinput) => {
@@ -56,6 +57,25 @@ context("Teste de Conexão", () => {
           if (index > 0) {
             cy.get($el)
               .find("#pValor")
+              .invoke("text")
+              .then((valgrid) => {
+                if (index == 1) {
+                  expect(valgrid).to.be.equal(valinput);
+                }
+              });
+          }
+        });
+      });
+
+      //valida nome
+      cy.get("#txtN1")
+      .invoke("prop", "value")
+      .then((valinput) => {
+        expect(valinput).to.be.equal('Ração');
+        cy.get("tbody tr").each(($el, index, $list) => {
+          if (index > 0) {
+            cy.get($el)
+              .find("#pNome")
               .invoke("text")
               .then((valgrid) => {
                 if (index == 1) {
